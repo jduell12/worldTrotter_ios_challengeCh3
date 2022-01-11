@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C842B110278B7EC7007100A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B10F278B7EC7007100A4 /* AppDelegate.swift */; };
 		C842B112278B7EC7007100A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B111278B7EC7007100A4 /* SceneDelegate.swift */; };
-		C842B114278B7EC7007100A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B113278B7EC7007100A4 /* ViewController.swift */; };
+		C842B114278B7EC7007100A4 /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B113278B7EC7007100A4 /* ConvertViewController.swift */; };
 		C842B117278B7EC7007100A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C842B115278B7EC7007100A4 /* Main.storyboard */; };
 		C842B119278B7EC8007100A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C842B118278B7EC8007100A4 /* Assets.xcassets */; };
 		C842B11C278B7EC8007100A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C842B11A278B7EC8007100A4 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,8 @@
 		C842B133278B7EC8007100A4 /* WorldTrotterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B132278B7EC8007100A4 /* WorldTrotterUITestsLaunchTests.swift */; };
 		C842B140278B939C007100A4 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B13F278B939C007100A4 /* UIColor+Hex.swift */; };
 		C842B142278B93D7007100A4 /* UIColor+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C842B141278B93D7007100A4 /* UIColor+custom.swift */; };
+		C85896DF278D290000117BF1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85896DE278D290000117BF1 /* MapViewController.swift */; };
+		C85896E1278D2EE000117BF1 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85896E0278D2EDF00117BF1 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 		C842B10C278B7EC7007100A4 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C842B10F278B7EC7007100A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C842B111278B7EC7007100A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C842B113278B7EC7007100A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C842B113278B7EC7007100A4 /* ConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewController.swift; sourceTree = "<group>"; };
 		C842B116278B7EC7007100A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C842B118278B7EC8007100A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C842B11B278B7EC8007100A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		C842B132278B7EC8007100A4 /* WorldTrotterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C842B13F278B939C007100A4 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		C842B141278B93D7007100A4 /* UIColor+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+custom.swift"; sourceTree = "<group>"; };
+		C85896DE278D290000117BF1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C85896E0278D2EDF00117BF1 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 			children = (
 				C842B10F278B7EC7007100A4 /* AppDelegate.swift */,
 				C842B111278B7EC7007100A4 /* SceneDelegate.swift */,
-				C842B113278B7EC7007100A4 /* ViewController.swift */,
+				C842B113278B7EC7007100A4 /* ConvertViewController.swift */,
+				C85896E0278D2EDF00117BF1 /* QuizViewController.swift */,
 				C842B13F278B939C007100A4 /* UIColor+Hex.swift */,
 				C842B141278B93D7007100A4 /* UIColor+custom.swift */,
 				C842B115278B7EC7007100A4 /* Main.storyboard */,
+				C85896DE278D290000117BF1 /* MapViewController.swift */,
 				C842B118278B7EC8007100A4 /* Assets.xcassets */,
 				C842B11A278B7EC8007100A4 /* LaunchScreen.storyboard */,
 				C842B11D278B7EC8007100A4 /* Info.plist */,
@@ -264,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C842B114278B7EC7007100A4 /* ViewController.swift in Sources */,
+				C842B114278B7EC7007100A4 /* ConvertViewController.swift in Sources */,
+				C85896DF278D290000117BF1 /* MapViewController.swift in Sources */,
 				C842B140278B939C007100A4 /* UIColor+Hex.swift in Sources */,
 				C842B110278B7EC7007100A4 /* AppDelegate.swift in Sources */,
+				C85896E1278D2EE000117BF1 /* QuizViewController.swift in Sources */,
 				C842B112278B7EC7007100A4 /* SceneDelegate.swift in Sources */,
 				C842B142278B93D7007100A4 /* UIColor+custom.swift in Sources */,
 			);
