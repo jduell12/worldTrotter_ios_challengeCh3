@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ConvertViewController: UIViewController {
+class ConvertViewController: UIViewController, UITextFieldDelegate {
 // With gradient background background color won't change so commented out so background color will change in viewWillAppear
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
@@ -17,6 +17,75 @@ class ConvertViewController: UIViewController {
 //        setGradientBackground(color1: grey, color2: grey2)
 //    }
 
+    @IBOutlet var celsiusLabel: UILabel!
+    @IBOutlet var textField: UITextField!
+    
+    var farenheitValue: Measurement<UnitTemperature>? {
+        didSet{
+            updateCelsiusLabel()
+        }
+    }
+    
+    var celsiusValue: Measurement<UnitTemperature>? {
+        if let farenheitValue = farenheitValue {
+            return farenheitValue.converted(to: .celsius)
+        } else {
+            return nil
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("ConvertViewController loaded successfully")
+        updateCelsiusLabel()
+    }
+    
+    @IBAction func fahrenheitFieldEditingChanged(_ textfield: UITextField){
+            if let text = textfield.text, let value = Double(text) {
+                farenheitValue = Measurement(value: value, unit: .fahrenheit)
+            } else {
+                farenheitValue = nil
+            }
+        }
+        
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer){
+        textField.resignFirstResponder()
+    }
+    
+    func updateCelsiusLabel(){
+        if let celsiusValue = celsiusValue {
+            celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
+        } else {
+            celsiusLabel.text = "???"
+        }
+    }
+    
+    func textField (_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+      let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
+      let replacementTextHasDecimalSeparator = string.range(of: ".")
+      let alphaCharacters = NSCharacterSet.letters
+      let replacementStringHasLetters = string.rangeOfCharacter(from: alphaCharacters)
+      
+      if  existingTextHasDecimalSeparator != nil, replacementTextHasDecimalSeparator != nil {
+            return false
+      } else {
+        if replacementStringHasLetters != nil {
+            return false
+        }
+         return true
+      }
+     
+    }
+    
+    let numberFormatter: NumberFormatter = {
+        let nf = NumberFormatter()
+        nf.numberStyle = .decimal
+        nf.minimumFractionDigits = 0
+        nf.maximumFractionDigits = 1
+        return nf
+    }()
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         

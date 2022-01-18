@@ -16,20 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVK-wr-cro">
-                                <rect key="frame" x="151.5" y="78.5" width="111" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7R-1t-8MH">
                                 <rect key="frame" x="150" y="445" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpv-kI-sVE">
-                                <rect key="frame" x="148.5" y="566.5" width="117" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpv-kI-sVE">
+                                <rect key="frame" x="155" y="566.5" width="104" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -46,25 +40,53 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Value" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lit-n7-LJ6">
+                                <rect key="frame" x="126" y="52" width="162" height="222"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Rrg-mQ-64U"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mIS-4w-FJ8"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="WVK-wr-cro" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Ab-1x-mzT"/>
+                            <constraint firstItem="Lit-n7-LJ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lf-xb-muc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MTX-gb-mtw" secondAttribute="bottom" multiplier="5:5" id="94A-Cg-AbQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R7R-1t-8MH" secondAttribute="bottom" multiplier="5:3" id="FfO-8v-Zzn"/>
+                            <constraint firstItem="Lit-n7-LJ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="NFy-vy-sTv"/>
+                            <constraint firstItem="noG-eW-VEY" firstAttribute="centerX" secondItem="Lit-n7-LJ6" secondAttribute="centerX" id="Ofo-9f-TMJ"/>
                             <constraint firstItem="Qpv-kI-sVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tby-lD-CHW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qpv-kI-sVE" secondAttribute="bottom" multiplier="5:4" id="XuW-iP-VxG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="noG-eW-VEY" secondAttribute="bottom" multiplier="5:2" id="ein-dl-jkH"/>
                             <constraint firstItem="R7R-1t-8MH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxE-xu-1jy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WVK-wr-cro" secondAttribute="bottom" multiplier="5:1" id="n0H-kh-CGf"/>
+                            <constraint firstItem="noG-eW-VEY" firstAttribute="top" secondItem="Lit-n7-LJ6" secondAttribute="bottom" constant="8" id="kUl-EG-pri"/>
+                            <constraint firstItem="MTX-gb-mtw" firstAttribute="centerX" secondItem="Lit-n7-LJ6" secondAttribute="centerX" id="smK-vK-2uf"/>
                             <constraint firstItem="MTX-gb-mtw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="syq-f0-ZTY"/>
+                            <constraint firstItem="R7R-1t-8MH" firstAttribute="centerX" secondItem="Lit-n7-LJ6" secondAttribute="centerX" id="tey-0K-hz1"/>
+                            <constraint firstItem="Qpv-kI-sVE" firstAttribute="centerX" secondItem="Lit-n7-LJ6" secondAttribute="centerX" id="vdP-JB-9Vo"/>
                             <constraint firstItem="noG-eW-VEY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zZ4-ED-dSH"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="PEi-Kr-nQH" appends="YES" id="zpf-Gy-DFW"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="vmK-P9-TCv"/>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="Qpv-kI-sVE" id="m38-ht-z5C"/>
+                        <outlet property="textField" destination="Lit-n7-LJ6" id="mGH-OO-kjP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PEi-Kr-nQH">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="TAH-XE-qXj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="13" y="17"/>
         </scene>
@@ -88,6 +110,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fUh-cH-nLq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pb0-nS-jcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
