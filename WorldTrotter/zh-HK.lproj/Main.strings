@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; configuration.title = "Next Question"; ObjectID = "7NL-N1-n2a"; */
+"7NL-N1-n2a.configuration.title" = "下一個問題";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7NL-N1-n2a"; */
+"7NL-N1-n2a.normalTitle" = "按鈕";
+
+/* Class = "UILabel"; text = "????"; ObjectID = "DPl-6q-9yR"; */
+"DPl-6q-9yR.text" = "????";
+
+/* Class = "UITextField"; placeholder = "Value"; ObjectID = "Lit-n7-LJ6"; */
+"Lit-n7-LJ6.placeholder" = "價值";
+
+/* Class = "UILabel"; text = "degrees Celsius"; ObjectID = "MTX-gb-mtw"; */
+"MTX-gb-mtw.text" = "攝氏度";
+
+/* Class = "UILabel"; text = "????"; ObjectID = "NMV-yT-jZl"; */
+"NMV-yT-jZl.text" = "????";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "Qpv-kI-sVE"; */
+"Qpv-kI-sVE.text" = "???";
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "R7R-1t-8MH"; */
+"R7R-1t-8MH.text" = "是真的";
+
+/* Class = "UILabel"; text = "degrees Fahrenheit"; ObjectID = "noG-eW-VEY"; */
+"noG-eW-VEY.text" = "華氏度";
+
+/* Class = "UITabBarItem"; title = "Quiz"; ObjectID = "sgQ-Vb-5Hc"; */
+"sgQ-Vb-5Hc.title" = "測驗";
+
+/* Class = "UITabBarItem"; title = "Convert"; ObjectID = "vmK-P9-TCv"; */
+"vmK-P9-TCv.title" = "兌換";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "w4J-zi-0jB"; */
+"w4J-zi-0jB.title" = "地圖";
+
+/* Class = "UIButton"; configuration.title = "Show Answer"; ObjectID = "wfR-eR-AUK"; */
+"wfR-eR-AUK.configuration.title" = "顯示答案";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wfR-eR-AUK"; */
+"wfR-eR-AUK.normalTitle" = "按鈕";

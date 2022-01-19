@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; configuration.title = "Next Question"; ObjectID = "7NL-N1-n2a"; */
+"7NL-N1-n2a.configuration.title" = "Próxima pregunta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7NL-N1-n2a"; */
+"7NL-N1-n2a.normalTitle" = "Botón";
+
+/* Class = "UILabel"; text = "????"; ObjectID = "DPl-6q-9yR"; */
+"DPl-6q-9yR.text" = "????";
+
+/* Class = "UITextField"; placeholder = "Value"; ObjectID = "Lit-n7-LJ6"; */
+"Lit-n7-LJ6.placeholder" = "Valor";
+
+/* Class = "UILabel"; text = "degrees Celsius"; ObjectID = "MTX-gb-mtw"; */
+"MTX-gb-mtw.text" = "grados Celsius";
+
+/* Class = "UILabel"; text = "????"; ObjectID = "NMV-yT-jZl"; */
+"NMV-yT-jZl.text" = "????";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "Qpv-kI-sVE"; */
+"Qpv-kI-sVE.text" = "???";
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "R7R-1t-8MH"; */
+"R7R-1t-8MH.text" = "es realmente";
+
+/* Class = "UILabel"; text = "degrees Fahrenheit"; ObjectID = "noG-eW-VEY"; */
+"noG-eW-VEY.text" = "grados Fahrenheit";
+
+/* Class = "UITabBarItem"; title = "Quiz"; ObjectID = "sgQ-Vb-5Hc"; */
+"sgQ-Vb-5Hc.title" = "Examen";
+
+/* Class = "UITabBarItem"; title = "Convert"; ObjectID = "vmK-P9-TCv"; */
+"vmK-P9-TCv.title" = "Convertir";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "w4J-zi-0jB"; */
+"w4J-zi-0jB.title" = "Mapa";
+
+/* Class = "UIButton"; configuration.title = "Show Answer"; ObjectID = "wfR-eR-AUK"; */
+"wfR-eR-AUK.configuration.title" = "Mostrar respuesta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wfR-eR-AUK"; */
+"wfR-eR-AUK.normalTitle" = "Botón";
